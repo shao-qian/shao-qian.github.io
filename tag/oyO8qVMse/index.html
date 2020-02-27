@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>【算法】并查集 | 韶浅 的 Blog</title>
+<title>一些小东西 | 韶浅 的 Blog</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -18,13 +18,7 @@
 
 
 
-    <meta name="description" content="并查集 ： 一个可以合并，查询的集合
-step1：我们先建立一个fa数组：int fa[maxN];
-`
-step2：最开始的时候，每个项目都有自己的集团，所以每个集团的老板就是他自己。
-for(int i=1;i&lt;=n;i++){
-..." />
-    <meta name="keywords" content="算法,并查集" />
+    <meta name="description" content="蒟蒻一枚，比较擅长HTML">
   </head>
   <body>
     <div id="app" class="main">
@@ -94,70 +88,28 @@ for(int i=1;i&lt;=n;i++){
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">【算法】并查集</h2>
-            <div class="post-date">2020-02-27</div>
-            
-            <div class="post-content" v-pre>
-              <p>并查集 ： 一个可以<strong>合并</strong>，<strong>查询</strong>的集合</p>
-<p>step1：我们先建立一个fa数组：<code>int fa[maxN];</code><br>
-`<br>
-step2：最开始的时候，每个项目都有自己的集团，所以每个集团的老板就是他自己。</p>
-<pre><code class="language-cpp">for(int i=1;i&lt;=n;i++){
-    fa[i]=i;
-}
-</code></pre>
-<p>step3：获取集团员工的老板：</p>
-<pre><code class="language-cpp">int find(int x){
-    if(fa[x]==x)return x;//当他的老板是自己，那他就是最大的老板
-   else return fa[x]=find(fa[x]);//否则问上级他的老板是谁，并把自己的上级设置为上级的老板
-}
-</code></pre>
-<p>step4：收购一个集团，也就是“并”：</p>
-<pre><code class="language-cpp">int merge(int x,int y){
-    x=find(x);//找到x的老板
-    y=find(y);//找到y的老板
-    fa[x]=y;//把x的老板的老板设置为y的老板
-}
-</code></pre>
-<p>step5：查询两个员工是不是在同一个集团内：</p>
-<pre><code class="language-cpp">int search(int x,int y){
-    if(find(x)==find(y)){//如果x的老板是y的老板，那他们就是一个集团内的 
-    return 1;
-   }
-   return 0;
-}
-</code></pre>
-<p>就是这么简单。</p>
-
-            </div>
-            
-              <div class="tag-container">
-                
-                  <a href="https://shao-qian.github.io/tag/IecGiHDZE/" class="tag">
-                    算法
-                  </a>
-                
-                  <a href="https://shao-qian.github.io/tag/8h4dkHU1B/" class="tag">
-                    并查集
-                  </a>
-                
-              </div>
-            
-            
-              <div class="next-post">
-                <div class="next">下一篇</div>
-                <a href="https://shao-qian.github.io/post/about/">
-                  <h3 class="post-title">
-                    关于
-                  </h3>
+          <h2 class="current-tag">标签: 一些小东西</h2>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://shao-qian.github.io/post/han-shu-getchyu-jian-zhi/">
+                  <h2 class="post-title">【函数】getch()与键值</h2>
                 </a>
+                <div class="post-date">
+                  2020-02-27
+                </div>
+                <div class="post-abstract">
+                  
+                </div>
               </div>
-            
+              
+            </article>
+          
 
-            
-
-          </div>
+          <div class="pagination-container">
+  
+  
+</div>
 
         </div>
       </div>
