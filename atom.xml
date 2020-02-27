@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://shao-qian.github.io</id>
     <title>韶浅 的 Blog</title>
-    <updated>2020-02-27T10:27:19.907Z</updated>
+    <updated>2020-02-27T10:28:29.766Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://shao-qian.github.io"/>
     <link rel="self" href="https://shao-qian.github.io/atom.xml"/>
@@ -22,9 +22,9 @@
 </ul>
 <p><code>getch()</code>用于获取键值。</p>
 <ul>
-<li>键值<br>
-键盘上每按下一个键，会被<code>getch()</code>监听到，返回一个值。</li>
+<li>键值</li>
 </ul>
+<p>键盘上每按下一个键，会被<code>getch()</code>监听到，返回一个值。</p>
 <p>这个值就叫键值。</p>
 <p>关于每个键对应的键值，请看如下程序：</p>
 <pre><code class="language-cpp">#include&lt;bits/stdc++.h&gt;
