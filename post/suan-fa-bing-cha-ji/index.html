@@ -1,0 +1,194 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>【算法】并查集 | Gridea</title>
+<link rel="shortcut icon" href="https://shao-qian.github.io/favicon.ico?v=1582796759568">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://shao-qian.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="【算法】并查集 | Gridea - Atom Feed" href="https://shao-qian.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="并查集 ： 一个可以合并，查询的集合
+step1：我们先建立一个fa数组：int fa[maxN];
+`
+step2：最开始的时候，每个项目都有自己的集团，所以每个集团的老板就是他自己。
+for(int i=1;i&lt;=n;i++){
+..." />
+    <meta name="keywords" content="并查集" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://shao-qian.github.io">
+  <img class="avatar" src="https://shao-qian.github.io/images/avatar.png?v=1582796759568" alt="">
+  </a>
+  <h1 class="site-title">
+    Gridea
+  </h1>
+  <p class="site-description">
+    温故而知新
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              【算法】并查集
+            </h2>
+            <div class="post-info">
+              <span>
+                2020-02-27
+              </span>
+              <span>
+                2 min read
+              </span>
+              
+                <a href="https://shao-qian.github.io/tag/8h4dkHU1B/" class="post-tag">
+                  # 并查集
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>并查集 ： 一个可以<strong>合并</strong>，<strong>查询</strong>的集合</p>
+<p>step1：我们先建立一个fa数组：<code>int fa[maxN];</code><br>
+`<br>
+step2：最开始的时候，每个项目都有自己的集团，所以每个集团的老板就是他自己。</p>
+<pre><code class="language-cpp">for(int i=1;i&lt;=n;i++){
+    fa[i]=i;
+}
+</code></pre>
+<p>step3：获取集团员工的老板：</p>
+<pre><code class="language-cpp">int find(int x){
+    if(fa[x]==x)return x;//当他的老板是自己，那他就是最大的老板
+   else return fa[x]=find(fa[x]);//否则问上级他的老板是谁，并把自己的上级设置为上级的老板
+}
+</code></pre>
+<p>step4：收购一个集团，也就是“并”：</p>
+<pre><code class="language-cpp">int merge(int x,int y){
+    x=find(x);//找到x的老板
+    y=find(y);//找到y的老板
+    fa[x]=y;//把x的老板的老板设置为y的老板
+}
+</code></pre>
+<p>step5：查询两个员工是不是在同一个集团内：</p>
+<pre><code class="language-cpp">int search(int x,int y){
+    if(find(x)==find(y)){//如果x的老板是y的老板，那他们就是一个集团内的 
+    return 1;
+   }
+   return 0;
+}
+</code></pre>
+<p>就是这么简单。</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://shao-qian.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://shao-qian.github.io</id>
+    <title>Gridea</title>
+    <updated>2020-02-27T09:46:05.892Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://shao-qian.github.io"/>
+    <link rel="self" href="https://shao-qian.github.io/atom.xml"/>
+    <subtitle>温故而知新</subtitle>
+    <logo>https://shao-qian.github.io/images/avatar.png</logo>
+    <icon>https://shao-qian.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2020, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[【算法】并查集]]></title>
+        <id>https://shao-qian.github.io/post/suan-fa-bing-cha-ji/</id>
+        <link href="https://shao-qian.github.io/post/suan-fa-bing-cha-ji/">
+        </link>
+        <updated>2020-02-27T05:44:50.000Z</updated>
+        <content type="html"><![CDATA[<p>并查集 ： 一个可以<strong>合并</strong>，<strong>查询</strong>的集合</p>
+<p>step1：我们先建立一个fa数组：<code>int fa[maxN];</code><br>
+`<br>
+step2：最开始的时候，每个项目都有自己的集团，所以每个集团的老板就是他自己。</p>
+<pre><code class="language-cpp">for(int i=1;i&lt;=n;i++){
+    fa[i]=i;
+}
+</code></pre>
+<p>step3：获取集团员工的老板：</p>
+<pre><code class="language-cpp">int find(int x){
+    if(fa[x]==x)return x;//当他的老板是自己，那他就是最大的老板
+   else return fa[x]=find(fa[x]);//否则问上级他的老板是谁，并把自己的上级设置为上级的老板
+}
+</code></pre>
+<p>step4：收购一个集团，也就是“并”：</p>
+<pre><code class="language-cpp">int merge(int x,int y){
+    x=find(x);//找到x的老板
+    y=find(y);//找到y的老板
+    fa[x]=y;//把x的老板的老板设置为y的老板
+}
+</code></pre>
+<p>step5：查询两个员工是不是在同一个集团内：</p>
+<pre><code class="language-cpp">int search(int x,int y){
+    if(find(x)==find(y)){//如果x的老板是y的老板，那他们就是一个集团内的 
+    return 1;
+   }
+   return 0;
+}
+</code></pre>
+<p>就是这么简单。</p>
+]]></content>
+    </entry>
+</feed>
