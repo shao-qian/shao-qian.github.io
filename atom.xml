@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://shao-qian.github.io</id>
     <title>韶浅 的 Blog</title>
-    <updated>2020-02-27T10:14:41.002Z</updated>
+    <updated>2020-02-27T10:17:17.885Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://shao-qian.github.io"/>
     <link rel="self" href="https://shao-qian.github.io/atom.xml"/>
@@ -10,6 +10,60 @@
     <logo>https://shao-qian.github.io/images/avatar.png</logo>
     <icon>https://shao-qian.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 韶浅 的 Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[【函数】getch()与键值]]></title>
+        <id>https://shao-qian.github.io/post/han-shu-getchyu-jian-zhi/</id>
+        <link href="https://shao-qian.github.io/post/han-shu-getchyu-jian-zhi/">
+        </link>
+        <updated>2020-02-27T10:14:58.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>getch()<br>
+<code>getch()</code>在<code>conio.h</code>库内,使用时请在头文件加上<code>#include&lt;conio.h&gt;</code></li>
+</ul>
+<p><code>getch()</code>用于获取键值。</p>
+<ul>
+<li>键值<br>
+键盘上每按下一个键，会被<code>getch()</code>监听到，返回一个值。</li>
+</ul>
+<p>这个值就叫键值。</p>
+<p>关于每个键对应的键值，请看如下程序：</p>
+<pre><code class="language-cpp">#include&lt;bits/stdc++.h&gt;
+#include&lt;conio.h&gt;
+using namespace std;
+int main(){
+    while(1){
+        cout&lt;&lt;(int)getch()&lt;&lt;endl&lt;&lt;&quot;------&quot;&lt;&lt;endl; 
+    }
+    return 0;
+}
+</code></pre>
+<p>运行时，每次按下一个键就会输出一个数。</p>
+<p>这就是这个键的键值。</p>
+<p>特别的，当你按下上下左右键时，会返回两个数，一个是224，另一个是它的键值。</p>
+<ul>
+<li>应用</li>
+</ul>
+<p>对键值的判断，可以用来看按下了哪个键。</p>
+<p>请看如下程序：</p>
+<pre><code class="language-cpp">#include&lt;bits/stdc++.h&gt;
+#include&lt;conio.h&gt;
+using namespace std;
+int main(){
+    while(1){
+        int n=getch();
+        if(n==72){
+            cout&lt;&lt;&quot;上&quot;&lt;&lt;endl;
+        }
+    }
+    return 0;
+}
+</code></pre>
+<ul>
+<li>挑战</li>
+</ul>
+<p>请你制作一个列表，能够用↑↓来控制选项，回车提交，并输出选择的选项。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【算法】并查集]]></title>
         <id>https://shao-qian.github.io/post/suan-fa-bing-cha-ji/</id>
