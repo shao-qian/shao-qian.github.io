@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://shao-qian.github.io</id>
     <title>韶浅 的 Blog</title>
-    <updated>2020-02-27T10:28:29.766Z</updated>
+    <updated>2020-02-27T10:29:46.163Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://shao-qian.github.io"/>
     <link rel="self" href="https://shao-qian.github.io/atom.xml"/>
@@ -17,9 +17,9 @@
         </link>
         <updated>2020-02-27T10:14:58.000Z</updated>
         <content type="html"><![CDATA[<ul>
-<li>getch()<br>
-<code>getch()</code>在<code>conio.h</code>库内,使用时请在头文件加上<code>#include&lt;conio.h&gt;</code></li>
+<li>getch()</li>
 </ul>
+<p><code>getch()</code>在<code>conio.h</code>库内,使用时请在头文件加上<code>#include&lt;conio.h&gt;</code></p>
 <p><code>getch()</code>用于获取键值。</p>
 <ul>
 <li>键值</li>
