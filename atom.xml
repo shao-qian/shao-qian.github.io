@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://shao-qian.github.io</id>
     <title>韶浅 的 Blog</title>
-    <updated>2020-02-27T13:54:42.793Z</updated>
+    <updated>2020-02-28T09:52:12.336Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://shao-qian.github.io"/>
     <link rel="self" href="https://shao-qian.github.io/atom.xml"/>
@@ -42,10 +42,45 @@ for(i=1;i&lt;=n;i++)
 <p>此处建议仅为个人平日练习代码风格</p>
 </blockquote>
 <ol>
-<li>命名规则。<br>
-要么都选大驼峰 <code>getMap</code> ，小驼峰 <code>getmap</code> ，分割法 <code>get_nap</code>,等等。<br>
-*</li>
+<li>
+<p>命名规则。</p>
+<p>要么都选大驼峰 <code>getMap</code> ，小驼峰 <code>getmap</code> ，分割法 <code>get_nap</code>,等等。</p>
+<p><strong>严禁混用！！</strong></p>
+</li>
 </ol>
+<pre><code class="language-c">//错误示范
+int changfangxingkuandu=100;
+int ChangHeight=200;
+int chang_Area=20000;
+</code></pre>
+<ol start="2">
+<li>
+<p>英语单词的使用。</p>
+<p>如果你没过四六级那就最好不要用英文单词，要用也得用下划线，那些单词很容易中枪！！！</p>
+<p>比如 <code>map</code>,<code>class</code>等等。</p>
+</li>
+<li>
+<p>大括号习惯。</p>
+<p>至于大括号的占位，我建议是右大括号上一排。因为那样要简洁一些。</p>
+<p>什么时候可以循环不用大括号？建议是在一个操作里面，比如并查集的初始化<code>f[i]=i;</code>这种的。</p>
+</li>
+<li>
+<p>注释习惯。</p>
+<p>当你觉得自己可能会忘的时候，一定要加注释。</p>
+<p>举个错误示范：</p>
+</li>
+</ol>
+<pre><code class="language-c">int a[100][100];
+int b[10000];
+//b拿来存a
+</code></pre>
+<p>你也搞不懂a是拿来干嘛的。如果不想打注释，可以把变量名改的形象一点：</p>
+<pre><code class="language-c">int left_child[1000],right_child[1000];
+</code></pre>
+<p>一目了然。</p>
+<blockquote>
+<p>待更新...</p>
+</blockquote>
 ]]></content>
     </entry>
     <entry>
