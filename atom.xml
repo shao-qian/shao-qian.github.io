@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://shao-qian.github.io</id>
     <title>韶浅 的 Blog</title>
-    <updated>2020-03-11T06:07:57.296Z</updated>
+    <updated>2020-04-01T14:00:35.509Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://shao-qian.github.io"/>
     <link rel="self" href="https://shao-qian.github.io/atom.xml"/>
@@ -11,12 +11,15 @@
     <icon>https://shao-qian.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 韶浅 的 Blog</rights>
     <entry>
-        <title type="html"><![CDATA[【公告】停更通知]]></title>
-        <id>https://shao-qian.github.io/post/gong-gao-ting-geng-tong-zhi/</id>
-        <link href="https://shao-qian.github.io/post/gong-gao-ting-geng-tong-zhi/">
+        <title type="html"><![CDATA[Nazo Game]]></title>
+        <id>https://shao-qian.github.io/post/nazo-game/</id>
+        <link href="https://shao-qian.github.io/post/nazo-game/">
         </link>
-        <updated>2020-03-11T06:07:14.000Z</updated>
-        <content type="html"><![CDATA[<p>最近要停更一会。</p>
+        <updated>2020-03-31T13:37:10.000Z</updated>
+        <content type="html"><![CDATA[<p>准备好了吗？<br>
+不要看github文档！<br>
+进入第一关的方法是<code>shao-qian.github.io/post/第一关/</code>。<br>
+以后关卡皆如此。</p>
 ]]></content>
     </entry>
     <entry>
