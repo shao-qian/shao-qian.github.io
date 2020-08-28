@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://shao-qian.github.io</id>
     <title>韶浅 的 Blog</title>
-    <updated>2020-08-28T17:05:51.343Z</updated>
+    <updated>2020-08-28T17:06:36.634Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://shao-qian.github.io"/>
     <link rel="self" href="http://shao-qian.github.io/atom.xml"/>
@@ -10,35 +10,6 @@
     <logo>http://shao-qian.github.io/images/avatar.png</logo>
     <icon>http://shao-qian.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 韶浅 的 Blog</rights>
-    <entry>
-        <title type="html"><![CDATA[【技巧】如何显示浏览器托管密码？]]></title>
-        <id>http://shao-qian.github.io/post/ji-qiao-ru-he-xian-shi-liu-lan-qi-tuo-guan-mi-ma/</id>
-        <link href="http://shao-qian.github.io/post/ji-qiao-ru-he-xian-shi-liu-lan-qi-tuo-guan-mi-ma/">
-        </link>
-        <updated>2020-08-28T17:04:44.000Z</updated>
-        <content type="html"><![CDATA[<p>受<a href="https://www.luogu.com.cn/user/352464">@蒟蒻JJＡ</a>大佬的委托，我写了这样一篇博客。</p>
-<h2 id="希望对大家有一定益处">希望对大家有一定益处。<br>
-<img src="https://cdn.luogu.com.cn/upload/image_hosting/s919vf7v.png" alt="" loading="lazy"></h2>
-<p><strong>Step 1</strong>.查看源代码</p>
-<p>请尝试使用 <code>F12</code> / <code>ctrl+shift+i</code> / 点击菜单里的开发者工具，打开开发页面。<br>
-<img src="https://cdn.luogu.com.cn/upload/image_hosting/ex239snl.png" alt="" loading="lazy"></p>
-<p>点击那个箭头符号，<br>
-<img src="https://cdn.luogu.com.cn/upload/image_hosting/sxe53247.png" alt="" loading="lazy"></p>
-<p>定位到输入密码一栏并点击（确保浏览器已自动填充）。<br>
-注意是否是<strong>input</strong>标签，如果不是，请到它的下层去找。<br>
-<img src="https://cdn.luogu.com.cn/upload/image_hosting/tl9ic6cy.png" alt="" loading="lazy"></p>
-<p><strong>Step 2</strong>.js部分<br>
-点击该标签后，您可能会看见后面有一个灰色的 <code>==$0</code>。<br>
-<img src="https://cdn.luogu.com.cn/upload/image_hosting/b2faplix.png" alt="" loading="lazy"></p>
-<p>然后在上面的选项里找到 <code>Console</code>，<br>
-<img src="https://cdn.luogu.com.cn/upload/image_hosting/3kzvwlb6.png" alt="" loading="lazy"></p>
-<p>输入</p>
-<pre><code class="language-javascript">$0.value
-</code></pre>
-<p>并回车，即可获得密码。</p>
-<figure data-type="image" tabindex="1"><img src="https://cdn.luogu.com.cn/upload/image_hosting/qijjkdjz.png" alt="" loading="lazy"></figure>
-]]></content>
-    </entry>
     <entry>
         <title type="html"><![CDATA[【技巧】如何显示浏览器托管密码？]]></title>
         <id>http://shao-qian.github.io/post/密码/</id>
