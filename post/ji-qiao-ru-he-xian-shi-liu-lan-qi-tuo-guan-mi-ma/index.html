@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>关于 | 韶浅 的 Blog</title>
+<title>【技巧】如何显示浏览器托管密码？ | 韶浅 的 Blog</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -24,17 +24,16 @@
 
 
 
-    <meta name="description" content="
-欢迎来到我的博客，很高兴遇见你！
+    <meta name="description" content="受@蒟蒻JJＡ大佬的委托，我写了这样一篇博客。
+希望对大家有一定益处。
 
-🏠 关于本站
-这是一个由Gridea搭建的小站。
-是不是很好看？
-以后就不在洛谷更新了。
-👨‍💻 博主是谁
-一名OIer中的蒟蒻。刷题不多，水题起码有一半。
-学习过 C++、HTML、CSS、JS..." />
-    <meta name="keywords" content="正经的" />
+Step 1.查看源代码
+请尝试使用 F12 / ctrl+shift+i / 点击菜单里的开发者工具，打开开发页面。
+
+点击那个箭头符号，
+
+定位到输入密码一栏并点..." />
+    <meta name="keywords" content="" />
   </head>
   <body>
     <div id="app" class="main">
@@ -113,35 +112,43 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">关于</h2>
-            <div class="post-date">2019-01-25</div>
+            <h2 class="post-title">【技巧】如何显示浏览器托管密码？</h2>
+            <div class="post-date">2020-08-29</div>
             
             <div class="post-content" v-pre>
-              <blockquote>
-<p>欢迎来到我的博客，很高兴遇见你！</p>
-</blockquote>
-<h2 id="关于本站">🏠 关于本站</h2>
-<p>这是一个由Gridea搭建的小站。</p>
-<p>是不是很好看？</p>
-<p>以后就不在洛谷更新了。</p>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<p>一名OIer中的蒟蒻。刷题不多，水题起码有一半。</p>
-<p>学习过 C++、HTML、CSS、JS（自学的）。</p>
-<h2 id="兴趣爱好">❤ 兴趣爱好</h2>
-<p>写写小游戏，刷水题。</p>
-<h2 id="联系我呀">☎联系我呀</h2>
-<p>QQ：2150864207</p>
+              <p>受<a href="https://www.luogu.com.cn/user/352464">@蒟蒻JJＡ</a>大佬的委托，我写了这样一篇博客。</p>
+<h2 id="希望对大家有一定益处">希望对大家有一定益处。<br>
+<img src="https://cdn.luogu.com.cn/upload/image_hosting/s919vf7v.png" alt="" loading="lazy"></h2>
+<p><strong>Step 1</strong>.查看源代码</p>
+<p>请尝试使用 <code>F12</code> / <code>ctrl+shift+i</code> / 点击菜单里的开发者工具，打开开发页面。<br>
+<img src="https://cdn.luogu.com.cn/upload/image_hosting/ex239snl.png" alt="" loading="lazy"></p>
+<p>点击那个箭头符号，<br>
+<img src="https://cdn.luogu.com.cn/upload/image_hosting/sxe53247.png" alt="" loading="lazy"></p>
+<p>定位到输入密码一栏并点击（确保浏览器已自动填充）。<br>
+注意是否是<strong>input</strong>标签，如果不是，请到它的下层去找。<br>
+<img src="https://cdn.luogu.com.cn/upload/image_hosting/tl9ic6cy.png" alt="" loading="lazy"></p>
+<p><strong>Step 2</strong>.js部分<br>
+点击该标签后，您可能会看见后面有一个灰色的 <code>==$0</code>。<br>
+<img src="https://cdn.luogu.com.cn/upload/image_hosting/b2faplix.png" alt="" loading="lazy"></p>
+<p>然后在上面的选项里找到 <code>Console</code>，<br>
+<img src="https://cdn.luogu.com.cn/upload/image_hosting/3kzvwlb6.png" alt="" loading="lazy"></p>
+<p>输入</p>
+<pre><code class="language-javascript">$0.value
+</code></pre>
+<p>并回车，即可获得密码。</p>
+<figure data-type="image" tabindex="1"><img src="https://cdn.luogu.com.cn/upload/image_hosting/qijjkdjz.png" alt="" loading="lazy"></figure>
 
             </div>
             
-              <div class="tag-container">
-                
-                  <a href="http://shao-qian.github.io/tag/U-dQDFExM/" class="tag">
-                    正经的
-                  </a>
-                
-              </div>
             
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="http://shao-qian.github.io/post/密码/">
+                  <h3 class="post-title">
+                    【技巧】如何显示浏览器托管密码？
+                  </h3>
+                </a>
+              </div>
             
 
             
